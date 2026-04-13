@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30CB34CC2F8CC67A00699281 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB34C72F8CC67A00699281 /* PersistenceManager.swift */; };
+		30CB34CD2F8CC67A00699281 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB34C62F8CC67A00699281 /* AppRouter.swift */; };
+		30CB34CE2F8CC67A00699281 /* SaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB34C92F8CC67A00699281 /* SaveService.swift */; };
+		30CB34CF2F8CC67A00699281 /* PrivacyWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB34C82F8CC67A00699281 /* PrivacyWebView.swift */; };
+		30CB34D02F8CC67A00699281 /* StartMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CB34CA2F8CC67A00699281 /* StartMainView.swift */; };
 		746A02B42F802CB60076A047 /* AppPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A02842F802CB60076A047 /* AppPrimaryButton.swift */; };
 		746A02B52F802CB60076A047 /* StarsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A02852F802CB60076A047 /* StarsRowView.swift */; };
 		746A02B62F802CB60076A047 /* AppExternalLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746A02872F802CB60076A047 /* AppExternalLink.swift */; };
@@ -39,6 +44,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30CB34C62F8CC67A00699281 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		30CB34C72F8CC67A00699281 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		30CB34C82F8CC67A00699281 /* PrivacyWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyWebView.swift; sourceTree = "<group>"; };
+		30CB34C92F8CC67A00699281 /* SaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveService.swift; sourceTree = "<group>"; };
+		30CB34CA2F8CC67A00699281 /* StartMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMainView.swift; sourceTree = "<group>"; };
 		493F6C05BC6CBCD9FD802195 /* Pods-129BruragelPulforke.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-129BruragelPulforke.debug.xcconfig"; path = "Target Support Files/Pods-129BruragelPulforke/Pods-129BruragelPulforke.debug.xcconfig"; sourceTree = "<group>"; };
 		746A01872F8026590076A047 /* 129BruragelPulforke.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 129BruragelPulforke.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		746A02842F802CB60076A047 /* AppPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrimaryButton.swift; sourceTree = "<group>"; };
@@ -86,6 +96,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30CB34CB2F8CC67A00699281 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				30CB34C62F8CC67A00699281 /* AppRouter.swift */,
+				30CB34C72F8CC67A00699281 /* PersistenceManager.swift */,
+				30CB34C82F8CC67A00699281 /* PrivacyWebView.swift */,
+				30CB34C92F8CC67A00699281 /* SaveService.swift */,
+				30CB34CA2F8CC67A00699281 /* StartMainView.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		746A017E2F8026590076A047 = {
 			isa = PBXGroup;
 			children = (
@@ -257,6 +279,7 @@
 				746A02B02F802CB60076A047 /* Main.storyboard */,
 				746A02B12F802CB60076A047 /* SceneDelegate.swift */,
 				746A02B22F802CB60076A047 /* ViewController.swift */,
+				30CB34CB2F8CC67A00699281 /* Router */,
 			);
 			path = 129BruragelPulforke;
 			sourceTree = "<group>";
@@ -385,6 +408,11 @@
 				746A02BB2F802CB60076A047 /* BlitzDashView.swift in Sources */,
 				746A02BC2F802CB60076A047 /* BlitzDashViewModel.swift in Sources */,
 				746A02BD2F802CB60076A047 /* SkyStrikeView.swift in Sources */,
+				30CB34CC2F8CC67A00699281 /* PersistenceManager.swift in Sources */,
+				30CB34CD2F8CC67A00699281 /* AppRouter.swift in Sources */,
+				30CB34CE2F8CC67A00699281 /* SaveService.swift in Sources */,
+				30CB34CF2F8CC67A00699281 /* PrivacyWebView.swift in Sources */,
+				30CB34D02F8CC67A00699281 /* StartMainView.swift in Sources */,
 				746A02BE2F802CB60076A047 /* SkyStrikeViewModel.swift in Sources */,
 				746A02BF2F802CB60076A047 /* StealthSprintView.swift in Sources */,
 				746A02C02F802CB60076A047 /* StealthSprintViewModel.swift in Sources */,
@@ -449,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pre.br9r5g5lp9lf3rk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -489,7 +517,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.pre.br9r5g5lp9lf3rk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
